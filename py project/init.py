@@ -4,6 +4,7 @@ from sqlite3 import *
 con=Connection('data')
 cur=con.cursor()
 #cur.execute('drop table orders')
+#cur.execute('drop table orders')
 cur.execute("create table if not exists orders(order_id varchar2(5) PRIMARY KEY,cname varchar2(10),cphone varchar2(10),c_add varchar2(20))")
 
 def fun():
